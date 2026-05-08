@@ -1,0 +1,116 @@
+{
+  "device": "cpu",
+  "torch_version": "2.11.0+cpu",
+  "torch_cuda_version": null,
+  "data_shape": {
+    "input_ids": [
+      9001,
+      30
+    ],
+    "input_types": [
+      9001,
+      30
+    ],
+    "input_masks": [
+      9001,
+      30
+    ],
+    "labels": [
+      9001
+    ],
+    "train": [
+      800,
+      800
+    ],
+    "valid": [
+      100,
+      100
+    ],
+    "test": [
+      8101,
+      8101
+    ]
+  },
+  "train_loss": [
+    0.5905691096186638
+  ],
+  "valid_loss": 0.41604522296360563,
+  "valid_acc": 0.82,
+  "confusion_matrix": [
+    [
+      49,
+      6
+    ],
+    [
+      12,
+      33
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n          消极     0.8033    0.8909    0.8448        55\n          积极     0.8462    0.7333    0.7857        45\n\n    accuracy                         0.8200       100\n   macro avg     0.8247    0.8121    0.8153       100\nweighted avg     0.8226    0.8200    0.8182       100\n",
+  "predictions": [
+    {
+      "text": "我喜欢你",
+      "label": 1,
+      "sentiment": "积极",
+      "logits": [
+        0.26499998569488525,
+        0.3086000084877014
+      ]
+    },
+    {
+      "text": "我不喜欢你",
+      "label": 0,
+      "sentiment": "消极",
+      "logits": [
+        0.6071000099182129,
+        -0.18289999663829803
+      ]
+    },
+    {
+      "text": "我非常喜欢你",
+      "label": 1,
+      "sentiment": "积极",
+      "logits": [
+        -0.33629998564720154,
+        0.7724999785423279
+      ]
+    },
+    {
+      "text": "我有点不喜欢你",
+      "label": 0,
+      "sentiment": "消极",
+      "logits": [
+        0.7613999843597412,
+        -0.2930000126361847
+      ]
+    },
+    {
+      "text": "我对你没什么感觉",
+      "label": 0,
+      "sentiment": "消极",
+      "logits": [
+        0.8920000195503235,
+        -0.2903999984264374
+      ]
+    },
+    {
+      "text": "这个商品质量很好，下次还会购买",
+      "label": 1,
+      "sentiment": "积极",
+      "logits": [
+        -0.5600000023841858,
+        1.3789000511169434
+      ]
+    },
+    {
+      "text": "服务太差了，再也不会来了",
+      "label": 0,
+      "sentiment": "消极",
+      "logits": [
+        1.526900053024292,
+        -0.7710999846458435
+      ]
+    }
+  ],
+  "model_path": "E:\\OneDrive - MSFT\\NLP\\BERT\\BERT\\Model_Parameter_save\\best_bert_model.pth"
+}
